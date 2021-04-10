@@ -1,0 +1,1290 @@
+{
+  "intents": [
+    {
+      "intent": "age",
+      "examples": [
+        {
+          "text": "age is equal to 60"
+        },
+        {
+          "text": "age is greater than 60"
+        },
+        {
+          "text": "age is less than 60"
+        },
+        {
+          "text": "equal to 60"
+        },
+        {
+          "text": "greater than 60"
+        },
+        {
+          "text": "less than 60"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "government_hospitals",
+      "examples": [
+        {
+          "text": "Gandhi hospital"
+        },
+        {
+          "text": "osmania hospital"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "kem cho"
+        },
+        {
+          "text": "namasthe"
+        },
+        {
+          "text": "valakum asalam"
+        },
+        {
+          "text": "vanakam"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hospitals",
+      "examples": [
+        {
+          "text": "govt hospital"
+        },
+        {
+          "text": "private hospital"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "positive_or_negative",
+      "examples": [
+        {
+          "text": "negative"
+        },
+        {
+          "text": "positive"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "private_hospital",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "symtomps",
+      "examples": [
+        {
+          "text": "my symptom is cold"
+        },
+        {
+          "text": "my symptom is cough"
+        },
+        {
+          "text": "my symptom is fever"
+        },
+        {
+          "text": "my symptom is headache"
+        },
+        {
+          "text": "None"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "YesOrNO",
+      "examples": [
+        {
+          "text": "no"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "age",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "45",
+          "synonyms": [
+            "45 years"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "above 45",
+          "synonyms": [
+            ">45",
+            "Above 45",
+            "equal to 45"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "below 45",
+          "synonyms": [
+            "<45",
+            "Below 45",
+            "below 45 years"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "equal to 45",
+          "synonyms": [
+            "Equal to 45",
+            "equal to 45 years"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "greater than 45",
+          "synonyms": [
+            "Greater than 45 ",
+            "greater than 45 years"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "less than 45",
+          "synonyms": [
+            "lesser than 45",
+            "Less than 45",
+            "less than 45 years"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "symptoms",
+          "synonyms": [
+            "symptom"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes_no",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "government_hospital",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Gandhi hospital",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Osmania hospital",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "good afnoon",
+            "good afternoon",
+            "gud afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "good evening",
+            "gud evening",
+            "gud evng",
+            "guud eveng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "good mrng",
+            "gud morng",
+            "gud morning",
+            "gud mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "elo",
+            "helo",
+            "hllo",
+            "hlo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hey",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "kem cho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "namasthe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "valakum asalam",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vanakam",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hospitals",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "government hospital",
+          "synonyms": [
+            "Government hospital",
+            "government hospitals",
+            "govt hospital",
+            "Govt hospitals"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Private hospital",
+          "synonyms": [
+            "Private hospital",
+            "private hospitals",
+            "prvt hospitals"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "private_hospital",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Appolo hospital",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Global hospital",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kamineni hospital",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Orange hospital",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "symptom",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "none",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "test_result",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Negative",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Positive",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "yes_no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1618029405099",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "enter_email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Did you take the covid test recently?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_10_1617976143890"
+    },
+    {
+      "type": "standard",
+      "title": "Government",
+      "parent": "node_2_1618029405099",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@government_hospital",
+      "dialog_node": "node_10_1618036534911"
+    },
+    {
+      "type": "standard",
+      "title": "list of hospitals",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#hospitals || @hospitals",
+      "dialog_node": "node_2_1618029405099",
+      "previous_sibling": "node_4_1618027524623"
+    },
+    {
+      "type": "standard",
+      "title": "Age restriction",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#age || @age",
+      "dialog_node": "node_4_1618027524623",
+      "previous_sibling": "node_9_1617993948505"
+    },
+    {
+      "type": "standard",
+      "title": "private",
+      "parent": "node_2_1618029405099",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@private_hospital",
+      "dialog_node": "node_6_1618036873529",
+      "previous_sibling": "node_10_1618036534911"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings && @greetings",
+      "dialog_node": "node_7_1617970934303",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "enquiry",
+      "parent": "node_9_1617993948505",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#symtomps || @symptom",
+      "dialog_node": "node_8_1617994350602",
+      "previous_sibling": "node_9_1617995193137"
+    },
+    {
+      "type": "standard",
+      "title": "Covid test",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#YesOrNO || @yes_no",
+      "dialog_node": "node_9_1617993948505",
+      "previous_sibling": "node_7_1617970934303"
+    },
+    {
+      "type": "standard",
+      "title": "test",
+      "parent": "node_9_1617993948505",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#positive_or_negative || @test_result",
+      "dialog_node": "node_9_1617995193137"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?Enter your mail id ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:Hello",
+      "dialog_node": "response_10_1617971589467",
+      "previous_sibling": "response_6_1617971564531"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Namasthe. How can I help you? Enter Your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:namasthe",
+      "dialog_node": "response_10_1617971736963",
+      "previous_sibling": "response_1_1617971713110"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vanakam. How can I help you?Enter your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:vanakam",
+      "dialog_node": "response_10_1617971822354",
+      "previous_sibling": "response_6_1617971799396"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent to your mail id $email shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618036873529",
+      "conditions": "@private_hospital:(Kamineni hospital)",
+      "dialog_node": "response_10_1618036922326",
+      "previous_sibling": "response_9_1618036907855"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon. How can I help you?  Enter Your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_1_1617971687300",
+      "previous_sibling": "response_7_1617971655532"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening. How can I help you? Enter Your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:(Good Evening)",
+      "dialog_node": "response_1_1617971713110",
+      "previous_sibling": "response_1_1617971687300"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "select any one of the below private hospitals.",
+            "options": [
+              {
+                "label": "Appolo hospital, Banjarahills ,Hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Appolo hospital, Banjarahills ,Hyderabad"
+                  }
+                }
+              },
+              {
+                "label": "Kamineni hospital, Nagole , hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Kamineni hospital, Nagole , hyderabad"
+                  }
+                }
+              },
+              {
+                "label": "Global hospital, Karmanghat , hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Global hospital, Karmanghat, hyderabad"
+                  }
+                }
+              },
+              {
+                "label": "Orange hospital ,Lb Nagar , Hyderabad.",
+                "value": {
+                  "input": {
+                    "text": "Orange hospital ,Lb Nagar , Hyderabad."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1618029405099",
+      "conditions": "@hospitals:(Private hospital)",
+      "dialog_node": "response_1_1618033775973",
+      "previous_sibling": "response_8_1618033737060"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent to your mail id  $email shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1618036534911",
+      "conditions": "@government_hospital:(Gandhi hospital)",
+      "dialog_node": "response_1_1618036777258"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "did u get positive or negative"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1617993948505",
+      "conditions": "@yes_no:Yes",
+      "dialog_node": "response_2_1617994027630",
+      "previous_sibling": "node_8_1617994350602"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://media.healthdirect.org.au/images/inline/original/covid-cold-flu-symptoms-bd24a5.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Do you have any of the above symptoms?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1617993948505",
+      "conditions": "@yes_no:No",
+      "dialog_node": "response_3_1617994064926",
+      "previous_sibling": "response_2_1617994027630"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Elligible to take covid vacine !!  Would you like to take covid vaccine in Government hospital or Private hospital."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:(greater than 45)",
+      "dialog_node": "response_3_1618027600568"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not elligible to take covid vaccine . Age should be greater than or equal to 45. Make sure you follow all the covid restrictions. Thank You."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:(less than 45)",
+      "dialog_node": "response_3_1618027707717",
+      "previous_sibling": "response_3_1618027600568"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent to your mail id $email shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1618036534911",
+      "conditions": "@government_hospital:(Osmania hospital)",
+      "dialog_node": "response_4_1618036849451",
+      "previous_sibling": "response_1_1618036777258"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey. How can I help you? Enter Your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:hey",
+      "dialog_node": "response_5_1617971637830",
+      "previous_sibling": "response_10_1617971589467"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Valakum asalam. How can I help you? Enter your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:(valakum asalam)",
+      "dialog_node": "response_5_1617971767231",
+      "previous_sibling": "response_10_1617971736963"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent to your mail id $email shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618036873529",
+      "conditions": "@private_hospital:(Orange hospital)",
+      "dialog_node": "response_5_1618036954349",
+      "previous_sibling": "response_10_1618036922326"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. How can I help you?Enter your mail id?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:hi",
+      "dialog_node": "response_6_1617971564531",
+      "previous_sibling": "node_10_1617976143890"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Kem cho. How can I help you? Enter your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:(kem cho)",
+      "dialog_node": "response_6_1617971799396",
+      "previous_sibling": "response_5_1617971767231"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your age greater than 45 or less than 45 or equal to 45"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617994350602",
+      "conditions": "@symptom:No",
+      "dialog_node": "response_6_1617994491753",
+      "previous_sibling": "response_7_1617994442261"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Self quartine yourself for 14 days, wear mask, maintain social distancing and follow all covid restrictions.You can take the covid vaccine after 2 months of your 14 days Quarantine"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1617995193137",
+      "conditions": "@test_result:Positive",
+      "dialog_node": "response_6_1617995224461"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://media.healthdirect.org.au/images/inline/original/covid-cold-flu-symptoms-bd24a5.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Do you have any of the above mentioned symptoms?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1617995193137",
+      "conditions": "@test_result:Negative",
+      "dialog_node": "response_6_1617995255759",
+      "previous_sibling": "response_6_1617995224461"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent your mail id $email shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618036873529",
+      "conditions": "@private_hospital:(Appolo hospital)",
+      "dialog_node": "response_6_1618036891511"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Elligible to take covid vacine !!  Would you like to take covid vaccine in Government hospital or Private hospital."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:(above 45)",
+      "dialog_node": "response_6_1618038702008",
+      "previous_sibling": "response_9_1618027844056"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Not elligible to take covid vaccine . Age should be greater than or equal to 45. Make sure you follow all the covid restrictions. Thank You."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:(below 45)",
+      "dialog_node": "response_6_1618038724230",
+      "previous_sibling": "response_6_1618038702008"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good morning. How can I help you? Enter Your mail id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617970934303",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_7_1617971655532",
+      "previous_sibling": "response_5_1617971637830"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have a covid test."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617994350602",
+      "conditions": "@symptom:Yes",
+      "dialog_node": "response_7_1617994387012"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your age greater than 45 or less than 45 or equal to 45 "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617994350602",
+      "conditions": "@symptom:No",
+      "dialog_node": "response_7_1617994442261",
+      "previous_sibling": "response_7_1617994387012"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "select any one of the below private hospitals.",
+            "options": [
+              {
+                "label": "Osmania general hospital , Koti ,  hyderabad",
+                "value": {
+                  "input": {
+                    "text": "Osmania general hospital , Koti ,  hyderabad"
+                  }
+                }
+              },
+              {
+                "label": "Gandhi hospital, Secunderabad",
+                "value": {
+                  "input": {
+                    "text": "Gandhi hospital, Secunderabad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1618029405099",
+      "conditions": "@hospitals:(government hospital)",
+      "dialog_node": "response_8_1618033737060",
+      "previous_sibling": "node_6_1618036873529"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Elligible to take covid vacine !!  Would you like to take covid vaccine in Government hospital or Private hospital."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:(equal to 45)",
+      "dialog_node": "response_9_1618027844056",
+      "previous_sibling": "response_3_1618027707717"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for using the Covid bot. Your Appointment details will be sent to your mail id $email  shortly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618036873529",
+      "conditions": "@private_hospital:(Global hospital)",
+      "dialog_node": "response_9_1618036907855",
+      "previous_sibling": "response_6_1618036891511"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Elligible to take covid vacine !!  Would you like to take covid vaccine in Government hospital or Private hospital."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618027524623",
+      "conditions": "@age:45",
+      "dialog_node": "response_9_1618038806620",
+      "previous_sibling": "response_6_1618038724230"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Covid bot !! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Covacine Bot",
+  "language": "en",
+  "description": ""
+}
